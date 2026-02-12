@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>About ROTr | Sierra Sacramento UAS Regional Operations & Training</title>
+  <meta name="description" content="About Sierra Sacramento ROTr: an interagency public safety UAS users group publishing operational guidelines and training references for incident airspace safety, ITA/AirCo deconfliction, and mutual aid interoperability." />
+
+  <link rel="canonical" href="https://REPLACE_WITH_YOUR_DOMAIN/pages/about.html" />
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="../index.html" aria-label="ROTr Home">
+        <span class="brand-mark" aria-hidden="true">ROTr</span>
+        <span class="brand-text">Sierra Sacramento UAS Regional Operations &amp; Training</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <div id="navLinks" class="nav-links">
+        <a href="airspace-deconfliction.html">Airspace Deconfliction</a>
+        <a href="mutual-aid-request.html">Mutual Aid Requests</a>
+        <a href="interagency-utilization.html">Interagency Utilization</a>
+        <a href="resources.html">Resources</a>
+        <a aria-current="page" href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <header class="page-head">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / About</div>
+      <h1>About ROTr</h1>
+      <p class="sublede">
+        Sierra Sacramento UAS Regional Operations and Training (ROTr) is an interagency users group focused on safe, coordinated,
+        and interoperable public safety UAS operations.
+      </p>
+    </header>
+
+    <section class="section">
+      <h2>Mission</h2>
+      <div class="callout info">
+        <p>
+          Publish practical, field-ready guidelines that improve safety in shared airspace, increase mutual aid interoperability,
+          and provide a common language for airspace management (e.g., ITA, AirCo, fences/ceilings/floors).
+        </p>
+      </div>
+
+      <h2>What we publish</h2>
+      <ul>
+        <li>Airspace Deconfliction Guidelines (featured reference)</li>
+        <li>UAS Mutual Aid Request Guidelines (classification &amp; request process)</li>
+        <li>Interagency UAS Utilization Guidelines (expectations for agencies &amp; pilots)</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <div class="callout action">
+        <p class="muted">Add an email alias or contact form destination here:</p>
+        <div class="codeblock" role="region" aria-label="Contact placeholder">
+Email: [ADD_CONTACT_EMAIL]
+Operational inquiries: [ADD_PHONE_OR_POC]
+        </div>
+      </div>
+
+      <h2>Versioning</h2>
+      <p class="muted">
+        Recommended: add version numbers and “last updated” dates to each page once the guidelines leave draft status.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>ROTr</strong>
+        <p class="muted">Sierra Sacramento UAS Regional Operations &amp; Training</p>
+      </div>
+      <div class="footer-links">
+        <a href="resources.html">Resources</a>
+        <a href="../index.html">Home</a>
+      </div>
+      <p class="muted small">Use in conjunction with FAA regulations, agency policy, and incident direction.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const links = document.getElementById('navLinks');
+    if (btn && links) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        links.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>

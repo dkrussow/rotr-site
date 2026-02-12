@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Interagency UAS Utilization Guidelines | Requesting/Sending Agency + Pilot Expectations (ROTr)</title>
+  <meta name="description" content="ROTr Interagency UAS Utilization Guidelines: best practices and expectations for requesting agencies, sending agencies, and pilots during mutual aid and multi-agency incidents (Part 107/COA, VLOS, Class G/ATC permission, TFR cautions, ICS integration)." />
+
+  <link rel="canonical" href="https://REPLACE_WITH_YOUR_DOMAIN/pages/interagency-utilization.html" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Interagency UAS Utilization Guidelines | ROTr" />
+  <meta property="og:description" content="Standardized expectations to ensure safe, coordinated, legally compliant UAS deployment during mutual aid." />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="../index.html" aria-label="ROTr Home">
+        <span class="brand-mark" aria-hidden="true">ROTr</span>
+        <span class="brand-text">Sierra Sacramento UAS Regional Operations &amp; Training</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <div id="navLinks" class="nav-links">
+        <a href="airspace-deconfliction.html">Airspace Deconfliction</a>
+        <a href="mutual-aid-request.html">Mutual Aid Requests</a>
+        <a aria-current="page" href="interagency-utilization.html">Interagency Utilization</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <header class="page-head">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Interagency Utilization</div>
+      <h1>Interagency UAS Utilization Guidelines</h1>
+      <p class="sublede">
+        Standardized expectations and best practices for UAS deployment during mutual aid and multi-agency responses to mitigate risk,
+        delineate liability, and enhance safety.
+      </p>
+
+      <div class="callout action">
+        <h3>Download the source document</h3>
+        <p><a class="btn" href="../docs/Interagency-UAS-Utilization-Guideline-v1-2-DRAFT.docx">Download DOCX</a></p>
+      </div>
+    </header>
+
+    <article class="article">
+      <h2 id="requesting">Section 1 — Agency expectations (requesting agency)</h2>
+      <ul>
+        <li>Ensure a safe airspace over the incident for crewed/uncrewed aircraft and people on the ground.</li>
+        <li>Consider establishing an Airspace Coordinator to coordinate the Incident Traffic Area (ITA).</li>
+        <li>Designate clear operational airspace zones for deconfliction.</li>
+        <li>Ensure positive two-way communications between all aircraft and the AirCo.</li>
+        <li>Define specific incident objectives for UAS use (mapping, situational awareness, payload delivery, etc.).</li>
+        <li>Ensure operations comply with FAA regulations, especially regarding airspace; use extreme caution near airports.</li>
+        <li>Notify ECC/Dispatch of ongoing UAS operations so the ECC can relay to responding aircraft.</li>
+      </ul>
+
+      <h2 id="sending">Section 2 — Agency expectations (sending agency)</h2>
+      <ul>
+        <li>Ensure pilots are properly trained, qualified, and currently carded under FAA Part 107 (or COA as applicable).</li>
+        <li>If operating under a COA, pilots are still required to understand commercial UAS operational elements (airspace, weather minimums, operations near crowds, etc.).</li>
+        <li>Ensure aircraft are airworthy: registration, inspections/maintenance per manufacturer, and suitability for the mission (night ops, external load, etc.).</li>
+        <li>No personally owned UAS shall be operated on an interagency incident without IC approval.</li>
+        <li>Sending agency assumes responsibility and liability for the UAS they send.</li>
+      </ul>
+
+      <h2 id="pilot">Section 3 — Pilot expectations</h2>
+      <div class="callout warning">
+        <h3>Operational baseline</h3>
+        <ul>
+          <li>Operate under FAA Part 107 or your agency’s COA; ensure you are certified/current for the aircraft and mission profile.</li>
+          <li>Maintain VLOS; avoid flights over people unless directly involved in the operation.</li>
+          <li>Whenever possible, employ a Visual Observer (VO).</li>
+          <li>UAS shall only operate in Class G unless permission has been received from ATC (SGI/LAANC/etc.).</li>
+          <li>No flights within a TFR unless permission has been received from the aerial coordinator in charge of that TFR. (Wildland fire note included in doc.)</li>
+          <li>Understand ICS role; ICS 100/200/700/800 recommended in the guideline.</li>
+          <li>Maintain direct communications with AirCo and other aircraft within the ITA.</li>
+          <li>Recorded/streamed media must be approved by the IC; releases coordinated through PIO/IC.</li>
+        </ul>
+      </div>
+
+      <p class="muted small">Source document: “Interagency UAS Utilization Guidelines” (DOCX).</p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>ROTr</strong>
+        <p class="muted">Sierra Sacramento UAS Regional Operations &amp; Training</p>
+      </div>
+      <div class="footer-links">
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+      </div>
+      <p class="muted small">Use in conjunction with FAA regulations, agency policy, and incident direction.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const links = document.getElementById('navLinks');
+    if (btn && links) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        links.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>

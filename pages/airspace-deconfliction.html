@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>UAS Airspace Deconfliction Guidelines | ITA, AirCo, Separation, Communications (ROTr)</title>
+  <meta name="description" content="Public safety UAS airspace deconfliction guidelines: two-way communications, Airspace Coordinator (AirCo), Incident Traffic Area (ITA), ITA briefing (IHMABRIC), 500-foot separation baseline, UAS-Friendly Approach, and shared-airspace definitions." />
+
+  <link rel="canonical" href="https://REPLACE_WITH_YOUR_DOMAIN/pages/airspace-deconfliction.html" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="UAS Airspace Deconfliction Guidelines | ITA • AirCo • Separation" />
+  <meta property="og:description" content="ROTr reference: communications protocols, ITA management, IHMABRIC briefing, 500’ separation baseline, and field-ready definitions & scripts." />
+  <meta property="og:url" content="https://REPLACE_WITH_YOUR_DOMAIN/pages/airspace-deconfliction.html" />
+  <meta property="og:image" content="https://REPLACE_WITH_YOUR_DOMAIN/assets/img/og-cover.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"UAS Airspace Deconfliction Guidelines (ROTr)",
+    "description":"Public safety UAS airspace deconfliction guidance for mixed crewed/uncrewed incidents: ITA, AirCo, communications protocols, and separation standards.",
+    "author":{"@type":"Organization","name":"Sierra Sacramento UAS Regional Operations and Training (ROTr)"},
+    "publisher":{"@type":"Organization","name":"Sierra Sacramento UAS Regional Operations and Training (ROTr)"},
+    "mainEntityOfPage":"https://REPLACE_WITH_YOUR_DOMAIN/pages/airspace-deconfliction.html"
+  }
+  </script>
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body data-page-base="">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="../index.html" aria-label="ROTr Home">
+        <span class="brand-mark" aria-hidden="true">ROTr</span>
+        <span class="brand-text">Sierra Sacramento UAS Regional Operations &amp; Training</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <div id="navLinks" class="nav-links">
+        <a aria-current="page" href="airspace-deconfliction.html">Airspace Deconfliction</a>
+        <a href="mutual-aid-request.html">Mutual Aid Requests</a>
+        <a href="interagency-utilization.html">Interagency Utilization</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <header class="page-head">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Airspace Deconfliction</div>
+      <h1>Airspace Deconfliction Guidelines</h1>
+      <p class="sublede">
+        Intended to ensure safe and effective deployment of one or multiple UAS in airspace shared with crewed aircraft or other UAS.
+        Defines airspace concepts, communication protocols, and ITA practices. (Source: “Airspace Deconfliction Guidelines” DOCX)
+      </p>
+
+      <div class="search" role="search" aria-label="Site search">
+        <input id="siteSearchInput" type="search" placeholder="Search: AirCo, ITA, IHMABRIC, 500 feet, blind call..." />
+        <button id="siteSearchBtn" type="button">Search</button>
+      </div>
+      <div id="siteSearchResults" class="search-results"></div>
+
+      <div class="callout action">
+        <h3>Download the source document</h3>
+        <p><a class="btn" href="../docs/Airspace-Deconfliction-Guidelines-v1-26-26.docx">Download DOCX</a></p>
+        <p class="muted small">Tip: If you later export a PDF, place it in <span class="kbd">/docs/</span> and add a PDF link here.</p>
+      </div>
+    </header>
+
+    <article class="article">
+      <h2 id="purpose">Purpose &amp; guiding principle</h2>
+      <p>
+        Effective communication is the single most important aspect of airspace deconfliction. Communication protocols are intended
+        to ensure direct pilot-to-pilot interactions and communicate control mechanisms such as fences, ceilings, floors, routes,
+        and “hold clear” areas to secure vertical and horizontal separation between aircraft.
+      </p>
+
+      <div class="callout warning">
+        <h3>Two-way communications requirement</h3>
+        <p>
+          Two-way communications between all aircraft are required for UAS to operate in airspace shared with crewed aircraft.
+          If a crewed aircraft (helicopter) arrives and UAS pilots cannot establish radio contact, UAS pilots will land their aircraft
+          until positive contact has been established.
+        </p>
+      </div>
+
+      <h2 id="comms">Section 1 — Communication protocols</h2>
+      <ul>
+        <li>All aircraft working within the airspace will be in contact with the Airspace Coordinator (“AirCo”) and with other aircraft in the airspace (AM or FM).</li>
+        <li>Crews responding to an incident where UAS are or may be operating shall establish communications with IC or designee prior to entering the ITA to determine whether UAS are operating.</li>
+        <li>UAS pilots shall contact the IC / AirCo / designee prior to takeoff within the ITA and establish communication with crewed aircraft directly or via AirCo prior to launching.</li>
+      </ul>
+
+      <h2 id="ihmabric">Incident Traffic Area (ITA) briefing — IHMABRIC</h2>
+      <p>
+        As new aircraft arrive or launch within the ITA, a radio or face-to-face briefing shall be conducted between crewed aircraft pilots,
+        uncrewed aircraft pilots, and/or the AirCo. The doc provides the following mnemonic:
+      </p>
+
+      <div class="quick-card" role="note" aria-label="IHMABRIC quick card">
+        <h3>IHMABRIC — ITA briefing quick card</h3>
+        <ul>
+          <li><strong>I</strong> — Identifier (call-sign) of all aircraft currently operating</li>
+          <li><strong>H</strong> — Hazards in the area</li>
+          <li><strong>M</strong> — Mission Type (Recon, Rescue, External load, Mapping, etc.)</li>
+          <li><strong>A</strong> — Altitude(s): vertical separation (who is operating at what altitude)</li>
+          <li><strong>B</strong> — Boundaries for operation: horizontal separation (fences, etc.)</li>
+          <li><strong>R</strong> — Radio frequency for air-to-air communications</li>
+          <li><strong>I</strong> — Information/intelligence to pass along</li>
+          <li><strong>C</strong> — Coordinator establishment/acknowledgement (AirCo assuming duties)</li>
+        </ul>
+        <p class="muted small">The briefing should occur upon arrival of a second aircraft and with every additional arriving aircraft.</p>
+      </div>
+
+      <h2 id="ita">Section 2 — ITA airspace management guidelines</h2>
+      <div class="card-grid">
+        <div class="callout info">
+          <h3>Airspace Coordinator (AirCo)</h3>
+          <p>
+            Mixed aircraft or multiple UAS should designate an AirCo to assume coordination of air resources and ensure clearly identified working areas.
+            The AirCo is similar in function (ICS context) to ATGS (“Air Attack”) or an “Air Boss” in law enforcement.
+          </p>
+        </div>
+        <div class="callout action" id="separation">
+          <h3>Separation baseline</h3>
+          <p><strong>Crewed and uncrewed aircraft should be separated by a minimum of 500 feet vertically and/or horizontally.</strong></p>
+          <p class="muted small">Any deviation from this baseline should be by explicit coordination/authorization and shared understanding. [VERIFY IN DOC if additional conditions exist]</p>
+        </div>
+      </div>
+
+      <h3>Horizontal separation (fences)</h3>
+      <p>
+        Horizontal work zones should be delineated by easily recognizable features that can serve as “virtual fences” such as roads, towers,
+        buildings, and topographical features. Aircraft will not leave their assigned area (cross a fence or altitude separation) unless authorized
+        by AirCo and notification has been made to other impacted aircraft.
+      </p>
+
+      <h3>Example (virtual fence)</h3>
+      <div class="codeblock" role="region" aria-label="Example fence script">
+AirCo: “UAS will stay north of Inspiration Point, and helicopters will stay south.”
+      </div>
+
+      <hr class="sep" />
+
+      <h2 id="uas-friendly-approach">“UAS-Friendly Approach” (crewed aircraft)</h2>
+      <p>
+        The guideline defines steps taken by crewed aircraft to increase safety approaching a new incident where public safety or civilian UAS may be present.
+      </p>
+
+      <div class="quick-card">
+        <h3>UAS-Friendly Approach — checklist</h3>
+        <ul>
+          <li>Establish contact with IC or ECC/Dispatch prior to entering a 1-mile ring around the incident to confirm whether UAS are operating.</li>
+          <li>If no contact has been made: make a blind call on Incident Command, Tactical, and/or CALCORD to notify on-scene personnel (including UAS operators) of arrival.</li>
+          <li>Approach the incident &gt; 500 feet AGL.</li>
+          <li>Slow approach and make at least one orbit at a “high” altitude (500–1000’ AGL) to allow UAS operators to see incoming aircraft and land their UAS.</li>
+          <li>Maintain situational awareness: conscientious scan for UAS on arrival.</li>
+        </ul>
+      </div>
+
+      <h2 id="definitions">Key definitions (from the guideline)</h2>
+
+      <div class="def">
+        <strong>Airspace Coordinator (“AirCo”)</strong>
+        Controlling entity responsible for ensuring all pilots understand parameters and separation zones over an incident; acts as aerial supervisor (“air traffic control” / “Air Boss”) to establish safe separation and sufficient communication between crewed and uncrewed aircraft. May be a standalone position or an additional role assigned to a UAS pilot or crewed aircraft.
+      </div>
+
+      <div class="def">
+        <strong>Blind Calls</strong>
+        One-way radio transmissions to alert aircraft that may be operating in a shared area: announce arrival direction/location, altitude, and intention. Used when no contact has been made and no aircraft are known to be operating; if aircraft are known to be operating, direct communication must be established prior to launching (UAS) or entering the airspace (crewed).
+      </div>
+
+      <div class="def">
+        <strong>Ceiling or Floor</strong>
+        Assigned altitude (high or low) not to cross, for vertical separation; may be AGL or MSL. AGL is generally preferred for UAS; if MSL is used, agree on altimeter reading.
+      </div>
+
+      <div class="def">
+        <strong>Corridor</strong>
+        Passage through another airspace (lateral + vertical references) allowing transit through restricted airspace to reach a landing zone or specific need.
+      </div>
+
+      <div class="def">
+        <strong>Fence</strong>
+        Geographical reference separating zones to manage horizontal separation; not to be crossed unless permissions are granted.
+      </div>
+
+      <div class="def">
+        <strong>Hold out area</strong>
+        Area temporarily restricted to flying (e.g., “All UAS need to hold out of Zone 2 until the hoisting operation is complete”).
+      </div>
+
+      <div class="def">
+        <strong>Incident Traffic Area (ITA)</strong>
+        Similar in purpose to an FTA (wildland fire) but designed for non-wildfire incidents (rescues, flooding, earthquake, etc.). Intended to assist organization/deconfliction between crewed and uncrewed aircraft or multiple aircraft in the same airspace. The guideline states ITAs will incorporate an area of no less than 1-mile radius (or 1 mile from outer UAS operational boundaries).
+      </div>
+
+      <h2 id="radio-example">Example radio exchange (MSL / altimeter)</h2>
+      <p class="muted">Included verbatim structure from the guideline (formatting adapted for readability):</p>
+      <div class="codeblock" role="region" aria-label="Example radio exchange">
+“Helicopter H-24, River Incident Airspace Coordinator on CALCORD”
+“River Airspace Coordinator, H-24, go ahead”
+“H-24, River Airspace Coordinator, current altimeter is 2997. You are cleared in to the River ITA at two thousand, five hundred feet or above. UAS Unmanned Romeo 41 is operating two thousand and below.”
+“River Airspace Coordinator, H-24 copies altimeter 2997 and cleared in at two thousand, five hundred or above, and Unmanned Romeo 41 is two thousand and below.”
+      </div>
+
+      <h2 id="notes">Scope notes</h2>
+      <div class="callout info">
+        <p>The guideline notes that it does not address UAS/flight operations within an FTA or within a TFR. Follow applicable controlling authority and incident direction.</p>
+      </div>
+
+      <hr class="sep" />
+      <p class="muted small">
+        Source document: “Airspace Deconfliction Guidelines v1-26-26” (DOCX). If you update policy language, also update this page and the search index.
+      </p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>ROTr</strong>
+        <p class="muted">Sierra Sacramento UAS Regional Operations &amp; Training</p>
+      </div>
+      <div class="footer-links">
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+      </div>
+      <p class="muted small">Use in conjunction with FAA regulations, agency policy, and incident direction.</p>
+    </div>
+  </footer>
+
+  <script src="../js/search-index.js"></script>
+  <script src="../js/search.js"></script>
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const links = document.getElementById('navLinks');
+    if (btn && links) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        links.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>
